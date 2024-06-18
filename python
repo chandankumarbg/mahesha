@@ -1,0 +1,15 @@
+import nltk
+nltk.download('punkt')  # Downloading necessary NLTK data (if not already downloaded)
+
+from nltk.tokenize import sent_tokenize, word_tokenize
+
+# French text
+text = "Bonjour le monde! Ceci est un texte simple. "
+
+# Tokenize sentences
+sentences = sent_tokenize(text)
+print("Sentences:", sentences)
+
+# Tokenize words
+words = word_tokenize(text, language='french')
+print("Words:", words)
